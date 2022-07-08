@@ -1,0 +1,40 @@
+@use '../../../../theme/colors.scss';
+
+div#apples {
+  width: 12rem;
+  display: grid;
+  grid-template-columns: repeat(6, 30px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  max-height: 250px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 10px;
+
+  .apple {
+    transition: all 0.2s ease-in-out;
+    border: none;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    cursor: pointer;
+
+    &:hover {
+      font-size: 40px;
+      border-radius: 100%;
+      background-color: colors.$secondary;
+    }
+  }
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 100px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 100px;
+  }
+}

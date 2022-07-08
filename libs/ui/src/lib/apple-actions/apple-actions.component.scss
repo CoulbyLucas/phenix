@@ -1,0 +1,26 @@
+@use '../../../../theme/colors.scss';
+
+div#actions {
+  width: 8rem;
+  .apple-btn {
+    display: block;
+    width: 90%;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 0.2rem;
+    cursor: pointer;
+    background-color: colors.$secondary;
+
+    &:hover {
+      background-color: #7584e8a6;
+    }
+    &.danger {
+      background-color: colors.$danger;
+      color: #fff;
+      &:hover {
+        background-color: #b30404;
+      }
+    }
+  }
+}

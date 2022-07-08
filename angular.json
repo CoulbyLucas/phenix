@@ -3,6 +3,9 @@
   "version": 2,
   "projects": {
     "apples": "apps/apples",
-    "apples-e2e": "apps/apples-e2e"
+    "apples-api": "apps/apples-api",
+    "apples-e2e": "apps/apples-e2e",
+    "dtos": "libs/dtos",
+    "ui": "libs/ui"
   }
 }

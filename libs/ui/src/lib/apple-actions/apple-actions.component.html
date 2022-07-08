@@ -1,0 +1,26 @@
+<div id="actions">
+  <button class="apple-btn" id="add-one-apple" (click)="randomApple()">
+    Add one of 🍏🍎
+  </button>
+  <button class="apple-btn" id="add-red-apple" (click)="addApple('red')">
+    Add 🍎
+  </button>
+  <button class="apple-btn" id="add-green-apple" (click)="addApple('green')">
+    Add 🍏
+  </button>
+  <hr />
+  <button
+    class="apple-btn danger"
+    id="remove-green-apples"
+    (click)="removeApples('green')"
+  >
+    Remove 🍏
+  </button>
+  <button
+    class="apple-btn danger"
+    id="remove-red-apples"
+    (click)="removeApples('red')"
+  >
+    Remove 🍎
+  </button>
+</div>

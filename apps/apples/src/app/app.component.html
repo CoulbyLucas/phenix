@@ -1,1 +1,17 @@
-<phenix-nx-welcome></phenix-nx-welcome>
+<div class="apples__container">
+  <div class="apples__container">
+    <h1 id="apples-title">Welcome to apples!</h1>
+    <div class="content">
+      <phenix-apple-actions
+        (onrandomApple)="randomApple()"
+        (onaddApple)="addApple($event)"
+        (onremoveApples)="removeApples($event)"
+      ></phenix-apple-actions>
+      <phenix-apple-list
+        [apples$]="apples$"
+        (onremove)="removeAppleAtIndex($event)"
+      ></phenix-apple-list>
+    </div>
+    <div id="footer">© 2022 made with 😻 by @coulbyl</div>
+  </div>
+</div>

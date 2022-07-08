@@ -1,0 +1,26 @@
+@use '../../../../libs/theme/colors.scss';
+
+.apples__container {
+  width: 50%;
+  margin: 0 auto;
+  background-color: colors.$primary;
+  padding: 1rem;
+  height: 100vh;
+
+  h1 {
+    text-align: center;
+    color: #fff;
+  }
+
+  div.content {
+    display: flex;
+  }
+}
+
+#footer {
+  text-align: center;
+  color: #fff;
+  padding: 1rem;
+  font-size: 18px;
+  margin-top: 15rem;
+}

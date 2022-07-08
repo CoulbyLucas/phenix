@@ -1,0 +1,9 @@
+<div id="apples">
+  <button
+    class="apple {{ apple?.color }}"
+    *ngFor="let apple of apples$ | async; let i = index"
+    (click)="removeAppleAtIndex(i)"
+  >
+    {{ apple?.character }}
+  </button>
+</div>
