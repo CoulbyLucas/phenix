@@ -6,7 +6,7 @@
     "e2e": {
       "executor": "@nrwl/cypress:cypress",
       "options": {
-        "cypressConfig": "apps/apples-e2e/cypress.json",
+        "cypressConfig": "apps/apples-e2e/cypress.config.js",
         "devServerTarget": "apples:serve:development"
       },
       "configurations": {
