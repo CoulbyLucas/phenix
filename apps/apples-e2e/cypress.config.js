@@ -1,10 +1,10 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable @typescript-eslint/no-empty-function */
-const { defineConfig } = require('cypress');
+const { defineConfig } = require('cypress')
 
 module.exports = defineConfig({
   fileServerFolder: '.',
-  fixturesFolder: './src/fixtures',
+  fixturesFolder: 'cypress/fixtures',
   modifyObstructiveCode: false,
   video: true,
   videosFolder: '../../dist/cypress/apps/apples-e2e/videos',
@@ -12,7 +12,6 @@ module.exports = defineConfig({
   chromeWebSecurity: false,
   e2e: {
     setupNodeEvents(on, config) {},
-    specPattern: './src/integration/**/*.cy.{js,jsx,ts,tsx}',
-    supportFile: './src/support/index.ts',
+    supportFile: 'cypress/support/e2e.js',
   },
-});
+})

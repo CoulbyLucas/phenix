@@ -1,0 +1,35 @@
+{
+  "fetchApples": {
+    "list": [
+      { "character": "🍏", "color": "green" },
+      { "character": "🍎", "color": "red" }
+    ]
+  },
+  "addOneApple": {
+    "list": [
+      { "character": "🍏", "color": "green" },
+      { "character": "🍎", "color": "red" },
+      { "character": "🍏", "color": "green" }
+    ]
+  },
+  "addRedApple": {
+    "list": [
+      { "character": "🍏", "color": "green" },
+      { "character": "🍎", "color": "red" },
+      { "character": "🍎", "color": "red" }
+    ]
+  },
+  "addGreenApple": {
+    "list": [
+      { "character": "🍎", "color": "red" },
+      { "character": "🍏", "color": "green" },
+      { "character": "🍏", "color": "green" }
+    ]
+  },
+  "removeRedApples": {
+    "list": []
+  },
+  "removeGreenApples": {
+    "list": []
+  }
+}
